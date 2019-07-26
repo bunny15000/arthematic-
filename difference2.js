@@ -1,11 +1,5 @@
 module.exports.sub = function(num1 , num2 ){
-    var sign = "+";
-    if(parseInt(num2)>parseInt(num1)){
-        var t =num1 ;
-        num1 = num2;
-        num2 =t ;
-        sign = "-";
-    }
+    
     var res = "";
     num1 = num1.split('').reverse();
     num2 = num2.split('').reverse();
@@ -37,7 +31,7 @@ module.exports.sub = function(num1 , num2 ){
         res +=diff.toString();
 
     }
-    return  sign + res.split('').reverse().join('');
+    return   res.split('').reverse().join('');
 }
 
 //console.log(sub("54","253"));
